@@ -1,4 +1,3 @@
-
 const PU = "1000 fr"; // Prix unitaire
 document.getElementById('calculateButton').addEventListener('click',()=>{
             alert('veillé entré une quantité ');
@@ -11,6 +10,10 @@ document.getElementById('calculateButton').addEventListener('click',()=>{
                 tariftotal = quantity * 1000; // Calcul du tarif total
                 alert('le tarif total est de ' + tariftotal + ' fr');
 
+            }
+            else if (quantity > 5) {
+                tariftotal = (quantity * 1000)* 0.90; // Calcul du tarif total avec réduction
+                alert('le tarif total est de ' + tariftotal + ' fr');
             }
 
         })
